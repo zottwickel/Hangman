@@ -143,8 +143,10 @@ class Game
 
 end
 
+Dir.mkdir("save") unless Dir.exists?("save")
+
 system 'clear'
-puts "Welcome to hangman! Please stand by for testing."
+puts "Welcome to hangman!"
 	if Dir.entries("save").length > 2
 		puts "Save files found! Enter your game's name from the list, or type NEW to start a new game!
 
