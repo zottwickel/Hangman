@@ -98,7 +98,7 @@ class Game
 			load "Hangman.rb"
 		end
 		@guess = @guess.downcase
-		if @guess.length > 1
+		if @guess.length == @cpu_choice.length
 			if @cpu_choice == @guess
 				puts "YOU WIN! the word was indeed #{@cpu_choice}!"
 				File.delete("save/" + @name + ".yaml") if File.exists?("save/" + @name + ".yaml")
@@ -106,8 +106,9 @@ class Game
 			else
 				system 'clear'
 				puts "Sorry, wrong word!"
+				@guess_count -= 1
 			end
-		else
+		elsif @guess.length == 1
 			if @cpu_choice.include? @guess
 				@cpu_choice.each_char.with_index do |x,y|
 					if x == @guess
@@ -126,6 +127,9 @@ class Game
 				puts "Sorry, wrong letter!"
 				@guess_count -= 1
 			end
+		else
+			system 'clear'
+			puts "You must enter a #{@cpu_choice.length}-letter word, or a single letter to guess!"
 		end
 	end
 
