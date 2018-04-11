@@ -1,0 +1,29 @@
+* {
+	text-align: center;
+	background-color: #FF9F58;
+	font-family: 'ABeeZee';
+	color: #171B3B;
+}
+
+#heading {
+}
+#word {
+	letter-spacing: 0.3em;
+}
+#textbox {
+	border-radius: 0.4em;
+	background-color: #A2BFAA;
+	text-align: left;
+	width: 60%;
+	padding: 0.5em;
+	border: 0px;
+}
+#button {
+	border-radius: 0.4em;
+	background-color: #308C7C;
+	padding: 0.5em;
+	border: 0px;
+}
+.regular {
+
+}

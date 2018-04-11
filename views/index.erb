@@ -1,20 +1,26 @@
 <html>
 <head>
+	<link rel="stylesheet" href="/style.css">
+	<link href='https://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet'>
 	<title>Hangman</title>
 </head>
 <body>
-	<h1>
+	<h1 id="heading">
 		Welcome to Hangman!
 	</h1>
-	<p>
+	<p class="regular">
 		<%= message %> <br>
-		Here is your word: <%= choice_string %> <br>
+	</p>
+	<p id="word">
+		<%= choice_string %> <br>
+	</p>
+	<p class="regular">
 		Guesses left: <%= guess_count %> <br>
 	</p>
-	<form>
-		Guess:<br>
-		<input name="guess" type ="text">
-		<input type="submit" value="Submit">
+	<form class="regular">
+		Guess:<br><br>
+		<input id="textbox" name="guess" type ="text">
+		<input id="button" type="submit" value="Submit">
 	</form>
 </body>
 </html>
