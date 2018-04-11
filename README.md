@@ -1,7 +1,6 @@
 # Hangman
-I made a Hangman app from ruby using a dictionary file!
+I made and deployed a hangman app at https://mysterious-forest-62052.herokuapp.com/
 
 # Notes
-This is part of The Odin Project, a free, open source learning tool for full-stack web development.
 
-You can save and load games in this version of hangman.
+Basic Sinatra app with some applied css.
