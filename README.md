@@ -1,5 +1,5 @@
 # Hangman
-I made and deployed a hangman app at https://mysterious-forest-62052.herokuapp.com/
+I used sinatra to make a hangman app.
 
 # Notes
 
